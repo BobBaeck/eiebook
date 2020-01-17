@@ -1,10 +1,12 @@
 ;##############################################################################
 ;# File: main_assembler.s
+
 ;##############################################################################
 
 ;------------------------------------------------------------------------------
 ; Description
 ; This is a demonstration program to show basic code structures in assembly
+; A test comment
 
 ; Includes
 #define  __ASSEMBLY__           1  ; Need this so the correct values in AT91SAM3U4.h are selected

@@ -1,0 +1,115 @@
+\hypertarget{user__app1_8c}{}\doxysection{D\+:/\+Git\+Hub/eiefirmware/eiebook/eiebook/firmware\+\_\+common/application/user\+\_\+app1.c File Reference}
+\label{user__app1_8c}\index{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/application/user\_app1.c@{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/application/user\_app1.c}}
+
+
+Hello world!  
+
+
+{\ttfamily \#include \char`\"{}configuration.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{user__app1_8c_abbe2c1447f0d62d7c9054b6331f4f0ea}{User\+App1\+Initialize}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the State Machine and its variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{user__app1_8c_a8f2ac55b4fdfdf3841ce019c51b72f5e}{User\+App1\+Run\+Active\+State}} (void)
+\begin{DoxyCompactList}\small\item\em Selects and runs one iteration of the current state in the state machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{user__app1_8c_a0137fd2f4751e0007eff5e87eec6ad2b}\label{user__app1_8c_a0137fd2f4751e0007eff5e87eec6ad2b}} 
+volatile \mbox{\hyperlink{typedefs_8h_a59725e3d58451855ffcb421c44ec9fbd}{u32}} \mbox{\hyperlink{user__app1_8c_a0137fd2f4751e0007eff5e87eec6ad2b}{G\+\_\+u32\+User\+App1\+Flags}}
+\begin{DoxyCompactList}\small\item\em Global state flags. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{user__app1_8c_a8744f5867dbc6c175c029dd7ee5e70af}\label{user__app1_8c_a8744f5867dbc6c175c029dd7ee5e70af}} 
+volatile \mbox{\hyperlink{typedefs_8h_a59725e3d58451855ffcb421c44ec9fbd}{u32}} \mbox{\hyperlink{user__app1_8c_a8744f5867dbc6c175c029dd7ee5e70af}{G\+\_\+u32\+System\+Flags}}
+\begin{DoxyCompactList}\small\item\em From \mbox{\hyperlink{main_8c}{main.\+c}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hello world! 
+
+\DoxyHorRuler{0}
+
+
+~\newline
+ \DoxyHorRuler{0}
+ G\+L\+O\+B\+A\+LS
+\begin{DoxyItemize}
+\item N\+O\+NE
+\end{DoxyItemize}
+
+C\+O\+N\+S\+T\+A\+N\+TS
+\begin{DoxyItemize}
+\item N\+O\+NE
+\end{DoxyItemize}
+
+T\+Y\+P\+ES
+\begin{DoxyItemize}
+\item N\+O\+NE
+\end{DoxyItemize}
+
+P\+U\+B\+L\+IC F\+U\+N\+C\+T\+I\+O\+NS
+\begin{DoxyItemize}
+\item N\+O\+NE
+\end{DoxyItemize}
+
+P\+R\+O\+T\+E\+C\+T\+ED F\+U\+N\+C\+T\+I\+O\+NS
+\begin{DoxyItemize}
+\item void \mbox{\hyperlink{user__app1_8c_abbe2c1447f0d62d7c9054b6331f4f0ea}{User\+App1\+Initialize(void)}}
+\item void \mbox{\hyperlink{user__app1_8c_a8f2ac55b4fdfdf3841ce019c51b72f5e}{User\+App1\+Run\+Active\+State(void)}} 
+\end{DoxyItemize}
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{user__app1_8c_abbe2c1447f0d62d7c9054b6331f4f0ea}\label{user__app1_8c_abbe2c1447f0d62d7c9054b6331f4f0ea}} 
+\index{user\_app1.c@{user\_app1.c}!UserApp1Initialize@{UserApp1Initialize}}
+\index{UserApp1Initialize@{UserApp1Initialize}!user\_app1.c@{user\_app1.c}}
+\doxysubsubsection{\texorpdfstring{UserApp1Initialize()}{UserApp1Initialize()}}
+{\footnotesize\ttfamily void User\+App1\+Initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes the State Machine and its variables. 
+
+\DoxyHorRuler{0}
+
+
+Should only be called once in main init section.
+
+Requires\+:
+\begin{DoxyItemize}
+\item N\+O\+NE
+\end{DoxyItemize}
+
+Promises\+:
+\begin{DoxyItemize}
+\item N\+O\+NE 
+\end{DoxyItemize}
+
+Definition at line 76 of file user\+\_\+app1.\+c.
+
+\mbox{\Hypertarget{user__app1_8c_a8f2ac55b4fdfdf3841ce019c51b72f5e}\label{user__app1_8c_a8f2ac55b4fdfdf3841ce019c51b72f5e}} 
+\index{user\_app1.c@{user\_app1.c}!UserApp1RunActiveState@{UserApp1RunActiveState}}
+\index{UserApp1RunActiveState@{UserApp1RunActiveState}!user\_app1.c@{user\_app1.c}}
+\doxysubsubsection{\texorpdfstring{UserApp1RunActiveState()}{UserApp1RunActiveState()}}
+{\footnotesize\ttfamily void User\+App1\+Run\+Active\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Selects and runs one iteration of the current state in the state machine. 
+
+\DoxyHorRuler{0}
+
+
+All state machines have a T\+O\+T\+AL of 1ms to execute, so on average n state machines may take 1ms / n to execute.
+
+Requires\+:
+\begin{DoxyItemize}
+\item State machine function pointer points at current state
+\end{DoxyItemize}
+
+Promises\+:
+\begin{DoxyItemize}
+\item Calls the function to pointed by the state machine function pointer 
+\end{DoxyItemize}
+
+Definition at line 107 of file user\+\_\+app1.\+c.
+

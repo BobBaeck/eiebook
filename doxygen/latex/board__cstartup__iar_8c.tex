@@ -1,0 +1,48 @@
+\hypertarget{board__cstartup__iar_8c}{}\doxysection{D\+:/\+Git\+Hub/eiefirmware/eiebook/eiebook/firmware\+\_\+common/bsp/board\+\_\+cstartup\+\_\+iar.c File Reference}
+\label{board__cstartup__iar_8c}\index{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/bsp/board\_cstartup\_iar.c@{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/bsp/board\_cstartup\_iar.c}}
+
+
+Atmel-\/supplied source file for I\+AR board startup.  
+
+
+{\ttfamily \#include \char`\"{}configuration.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_int_vector}{Int\+Vector}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{board__cstartup__iar_8c_ab4ccc436ed44ffac8d3ab82bba93476d}\label{board__cstartup__iar_8c_ab4ccc436ed44ffac8d3ab82bba93476d}} 
+void {\bfseries \+\_\+\+\_\+iar\+\_\+program\+\_\+start} (void)
+\item 
+int \mbox{\hyperlink{board__cstartup__iar_8c_ac11843d93e41358f2d964f1bf2c94a1e}{\+\_\+\+\_\+low\+\_\+level\+\_\+init}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{board__cstartup__iar_8c_acae67b7b600ce807345ed983f259294f}\label{board__cstartup__iar_8c_acae67b7b600ce807345ed983f259294f}} 
+unsigned int {\bfseries \+\_\+\+\_\+\+I\+C\+F\+E\+D\+I\+T\+\_\+vector\+\_\+start\+\_\+\+\_\+}
+\item 
+\mbox{\Hypertarget{board__cstartup__iar_8c_a3dc93846d0adf517f612811d96a1f59a}\label{board__cstartup__iar_8c_a3dc93846d0adf517f612811d96a1f59a}} 
+const \mbox{\hyperlink{union_int_vector}{Int\+Vector}} {\bfseries \+\_\+\+\_\+vector\+\_\+table} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Atmel-\/supplied source file for I\+AR board startup. 
+
+This file captures the vector table in F\+L\+A\+SH and has the required entry symbols to make the I\+AR compiler happy and generate the proper startup code to do low level initializations and then call main. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{board__cstartup__iar_8c_ac11843d93e41358f2d964f1bf2c94a1e}\label{board__cstartup__iar_8c_ac11843d93e41358f2d964f1bf2c94a1e}} 
+\index{board\_cstartup\_iar.c@{board\_cstartup\_iar.c}!\_\_low\_level\_init@{\_\_low\_level\_init}}
+\index{\_\_low\_level\_init@{\_\_low\_level\_init}!board\_cstartup\_iar.c@{board\_cstartup\_iar.c}}
+\doxysubsubsection{\texorpdfstring{\_\_low\_level\_init()}{\_\_low\_level\_init()}}
+{\footnotesize\ttfamily int \+\_\+\+\_\+low\+\_\+level\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+This is the code that gets called on processor reset. To initialize the device. 
+
+Definition at line 133 of file board\+\_\+cstartup\+\_\+iar.\+c.
+

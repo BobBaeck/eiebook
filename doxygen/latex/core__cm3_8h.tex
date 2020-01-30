@@ -1,0 +1,425 @@
+\hypertarget{core__cm3_8h}{}\doxysection{D\+:/\+Git\+Hub/eiefirmware/eiebook/eiebook/firmware\+\_\+common/cmsis/core\+\_\+cm3.h File Reference}
+\label{core__cm3_8h}\index{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/cmsis/core\_cm3.h@{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/cmsis/core\_cm3.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_interrupt_type___type}{Interrupt\+Type\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_ac1c1120e9fe082fac8225c60143ac79a}{\+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+IN}}~(0x01)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a9ff7a998d4b8b3c87bfaca6e78607950}{\+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+UB}}~(0x10)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_af888c651cd8c93fd25364f9e74306a1c}{\+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+ON}}~((\mbox{\hyperlink{core__cm3_8h_ac1c1120e9fe082fac8225c60143ac79a}{\+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+IN}} $<$$<$ 16) $\vert$ \mbox{\hyperlink{core__cm3_8h_a9ff7a998d4b8b3c87bfaca6e78607950}{\+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+UB}})
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a63ea62503c88acab19fcf3d5743009e3}{\+\_\+\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+M}}~(0x03)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_ae3fe3587d5100c787e02102ce3944460}{\+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS}}~4
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}}~volatile const
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a7e25d9380f9ef903923964322e71f2f6}{\+\_\+\+\_\+O}}~volatile
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}}~volatile
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a5baecd2b24d7ca2fb850c7ffc05799ac}{N\+V\+I\+C\+\_\+\+V\+E\+C\+T\+R\+E\+S\+ET}}~0
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a461d3b604dbeec9525775a7ad7ee501c}{N\+V\+I\+C\+\_\+\+S\+Y\+S\+R\+E\+S\+E\+T\+R\+EQ}}~2
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a2f8cb12ddfff6c13cf3fefd1c7d490f4}{N\+V\+I\+C\+\_\+\+A\+I\+R\+C\+R\+\_\+\+V\+E\+C\+T\+K\+EY}}~(0x5\+FA $<$$<$ 16)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a2b09738a6dbbef976ba64156c3b5c5a3}{N\+V\+I\+C\+\_\+\+A\+I\+R\+C\+R\+\_\+\+E\+N\+D\+I\+A\+N\+E\+SS}}~15
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a806e775f7ac4bf19dd39b4075bd5a8a5}{Core\+Debug\+\_\+\+D\+E\+M\+C\+R\+\_\+\+T\+R\+C\+E\+NA}}~(1 $<$$<$ 24)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a3669715b5b18b1144dd0f69eb220e743}{I\+T\+M\+\_\+\+T\+C\+R\+\_\+\+I\+T\+M\+E\+NA}}~1
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}}~(0x\+E000\+E000)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_add76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}}~(0x\+E0000000)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE}}~(0x\+E000\+E\+D\+F0)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}}~(\mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}} +  0x0010)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_aa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}}~(\mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}} +  0x0100)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_ad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}}~(\mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}} +  0x0\+D00)
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_a164238adbad56f07c7dd4e912af748dd}{Interrupt\+Type}}~((\mbox{\hyperlink{struct_interrupt_type___type}{Interrupt\+Type\+\_\+\+Type}} $\ast$) \mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}})
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_aaaf6477c2bde2f00f99e3c2fd1060b01}{S\+CB}}~((\mbox{\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}} $\ast$)           \mbox{\hyperlink{core__cm3_8h_ad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}})
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_acd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}}~((\mbox{\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}} $\ast$)       \mbox{\hyperlink{core__cm3_8h_a58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}})
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_ac8e97e8ce56ae9f57da1363a937f8a17}{N\+V\+IC}}~((\mbox{\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}} $\ast$)          \mbox{\hyperlink{core__cm3_8h_aa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}})
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_abae7cdf882def602cb787bb039ff6a43}{I\+TM}}~((\mbox{\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}} $\ast$)           \mbox{\hyperlink{core__cm3_8h_add76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}})
+\item 
+\#define \mbox{\hyperlink{core__cm3_8h_ab6e30a2b802d9021619dbb0be7f5d63d}{Core\+Debug}}~((\mbox{\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type}} $\ast$)     \mbox{\hyperlink{core__cm3_8h_a680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE}})
+\item 
+\mbox{\Hypertarget{core__cm3_8h_a07c0cb4d0c416053fa7f46a85ada0813}\label{core__cm3_8h_a07c0cb4d0c416053fa7f46a85ada0813}} 
+\#define {\bfseries S\+Y\+S\+T\+I\+C\+K\+\_\+\+E\+N\+A\+B\+LE}~0                                          /$\ast$ Config-\/Bit to start or stop the \mbox{\hyperlink{core__cm3_8h_acd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}} Timer                         $\ast$/
+\item 
+\mbox{\Hypertarget{core__cm3_8h_ad7e4f50358fca237b85eba3383ae5005}\label{core__cm3_8h_ad7e4f50358fca237b85eba3383ae5005}} 
+\#define {\bfseries S\+Y\+S\+T\+I\+C\+K\+\_\+\+T\+I\+C\+K\+I\+NT}~1                                          /$\ast$ Config-\/Bit to enable or disable the \mbox{\hyperlink{core__cm3_8h_acd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}} interrupt                 $\ast$/
+\item 
+\mbox{\Hypertarget{core__cm3_8h_a149f87d0e591bc28f013b609ab6a86eb}\label{core__cm3_8h_a149f87d0e591bc28f013b609ab6a86eb}} 
+\#define {\bfseries S\+Y\+S\+T\+I\+C\+K\+\_\+\+C\+L\+K\+S\+O\+U\+R\+CE}~2                                          /$\ast$ Clocksource has the offset 2 in \mbox{\hyperlink{core__cm3_8h_acd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}} Control and Status Register   $\ast$/
+\item 
+\mbox{\Hypertarget{core__cm3_8h_a470c2b72a7a3f7403e43b6c56e1f0a11}\label{core__cm3_8h_a470c2b72a7a3f7403e43b6c56e1f0a11}} 
+\#define {\bfseries S\+Y\+S\+T\+I\+C\+K\+\_\+\+M\+A\+X\+C\+O\+U\+NT}~((1$<$$<$24) -\/1)                                    /$\ast$ \mbox{\hyperlink{core__cm3_8h_acd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}} Max\+Count                                                      $\ast$/
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\DoxyHorRuler{0}
+
+
+@purpose C\+M\+S\+IS Cortex-\/\+M3 Core Peripheral Access Layer Header File \begin{DoxyVersion}{Version}
+V1.\+10 
+\end{DoxyVersion}
+\hypertarget{core__cm3_8h_autotoc_md4}{}\doxysubsubsection{@date    24. Feb. 2009}\label{core__cm3_8h_autotoc_md4}
+Copyright (C) 2009 A\+RM Limited. All rights reserved.
+
+A\+RM Limited (A\+RM) is supplying this software for use with Cortex-\/\+Mx processor based microcontrollers. This file can be freely distributed within development tools that are supporting such A\+RM based processors.
+
+T\+H\+IS S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}. NO W\+A\+R\+R\+A\+N\+T\+I\+ES, W\+H\+E\+T\+H\+ER E\+X\+P\+R\+E\+SS, I\+M\+P\+L\+I\+ED OR S\+T\+A\+T\+U\+T\+O\+RY, I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY A\+ND F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+P\+P\+LY TO T\+H\+IS S\+O\+F\+T\+W\+A\+RE. A\+RM S\+H\+A\+LL N\+OT, IN A\+NY C\+I\+R\+C\+U\+M\+S\+T\+A\+N\+C\+ES, BE L\+I\+A\+B\+LE F\+OR S\+P\+E\+C\+I\+AL, I\+N\+C\+I\+D\+E\+N\+T\+AL, OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES, F\+OR A\+NY R\+E\+A\+S\+ON W\+H\+A\+T\+S\+O\+E\+V\+ER.
+
+Lint configuration ~\newline
+ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- ~\newline
+ The following Lint messages will be suppressed and not shown\+: ~\newline
+ ~\newline
+ --- Error 10\+: --- ~\newline
+ register uint32\+\_\+t \+\_\+\+\_\+reg\+Base\+Pri \+\_\+\+\_\+asm(\char`\"{}basepri\char`\"{}); ~\newline
+ Error 10\+: Expecting \textquotesingle{};\textquotesingle{} ~\newline
+ ~\newline
+ --- Error 530\+: --- ~\newline
+ return(\+\_\+\+\_\+reg\+Base\+Pri); ~\newline
+ Warning 530\+: Symbol \textquotesingle{}\+\_\+\+\_\+reg\+Base\+Pri\textquotesingle{} (line 264) not initialized ~\newline
+ ~\newline
+ --- Error 550\+: --- ~\newline
+ \+\_\+\+\_\+reg\+Base\+Pri = (base\+Pri \& 0x1ff); ~\newline
+ \} ~\newline
+ Warning 550\+: Symbol \textquotesingle{}\+\_\+\+\_\+reg\+Base\+Pri\textquotesingle{} (line 271) not accessed ~\newline
+ ~\newline
+ --- Error 754\+: --- ~\newline
+ uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D0\mbox{[}24\mbox{]}; ~\newline
+ Info 754\+: local structure member \textquotesingle{}$<$some, not used in the H\+AL$>$\textquotesingle{} (line 109, file ./cm3\+\_\+core.h) not referenced ~\newline
+ ~\newline
+ --- Error 750\+: --- ~\newline
+ \#define {\bfseries{C\+M3\+\_\+\+C\+O\+R\+E\+\_\+H}} ~\newline
+ Info 750\+: local macro \textquotesingle{}{\bfseries{C\+M3\+\_\+\+C\+O\+R\+E\+\_\+H}}\textquotesingle{} (line 43, file./cm3\+\_\+core.h) not referenced ~\newline
+ ~\newline
+ --- Error 528\+: --- ~\newline
+ static \+\_\+\+\_\+\+I\+N\+L\+I\+NE void N\+V\+I\+C\+\_\+\+Disable\+I\+R\+Q(uint32\+\_\+t I\+R\+Qn) ~\newline
+ Warning 528\+: Symbol \textquotesingle{}N\+V\+I\+C\+\_\+\+Disable\+I\+R\+Q(unsigned int)\textquotesingle{} (line 419, file ./cm3\+\_\+core.h) not referenced ~\newline
+ ~\newline
+ --- Error 751\+: --- ~\newline
+ \} \mbox{\hyperlink{struct_interrupt_type___type}{Interrupt\+Type\+\_\+\+Type}}; ~\newline
+ Info 751\+: local typedef \textquotesingle{}\mbox{\hyperlink{struct_interrupt_type___type}{Interrupt\+Type\+\_\+\+Type}}\textquotesingle{} (line 170, file ./cm3\+\_\+core.h) not referenced ~\newline
+ ~\newline
+ ~\newline
+ Note\+: To re-\/enable a Message, insert a space before \textquotesingle{}lint\textquotesingle{} $\ast$ ~\newline
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{core__cm3_8h_af888c651cd8c93fd25364f9e74306a1c}\label{core__cm3_8h_af888c651cd8c93fd25364f9e74306a1c}} 
+\index{core\_cm3.h@{core\_cm3.h}!\_\_CM3\_CMSIS\_VERSION@{\_\_CM3\_CMSIS\_VERSION}}
+\index{\_\_CM3\_CMSIS\_VERSION@{\_\_CM3\_CMSIS\_VERSION}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{\_\_CM3\_CMSIS\_VERSION}{\_\_CM3\_CMSIS\_VERSION}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+ON~((\mbox{\hyperlink{core__cm3_8h_ac1c1120e9fe082fac8225c60143ac79a}{\+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+IN}} $<$$<$ 16) $\vert$ \mbox{\hyperlink{core__cm3_8h_a9ff7a998d4b8b3c87bfaca6e78607950}{\+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+UB}})}
+
+C\+M\+S\+IS H\+AL version number ~\newline
+ 
+
+Definition at line 76 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_ac1c1120e9fe082fac8225c60143ac79a}\label{core__cm3_8h_ac1c1120e9fe082fac8225c60143ac79a}} 
+\index{core\_cm3.h@{core\_cm3.h}!\_\_CM3\_CMSIS\_VERSION\_MAIN@{\_\_CM3\_CMSIS\_VERSION\_MAIN}}
+\index{\_\_CM3\_CMSIS\_VERSION\_MAIN@{\_\_CM3\_CMSIS\_VERSION\_MAIN}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{\_\_CM3\_CMSIS\_VERSION\_MAIN}{\_\_CM3\_CMSIS\_VERSION\_MAIN}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+IN~(0x01)}
+
+\mbox{[}31\+:16\mbox{]} C\+M\+S\+IS H\+AL main version 
+
+Definition at line 74 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a9ff7a998d4b8b3c87bfaca6e78607950}\label{core__cm3_8h_a9ff7a998d4b8b3c87bfaca6e78607950}} 
+\index{core\_cm3.h@{core\_cm3.h}!\_\_CM3\_CMSIS\_VERSION\_SUB@{\_\_CM3\_CMSIS\_VERSION\_SUB}}
+\index{\_\_CM3\_CMSIS\_VERSION\_SUB@{\_\_CM3\_CMSIS\_VERSION\_SUB}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{\_\_CM3\_CMSIS\_VERSION\_SUB}{\_\_CM3\_CMSIS\_VERSION\_SUB}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+C\+M3\+\_\+\+C\+M\+S\+I\+S\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+UB~(0x10)}
+
+\mbox{[}15\+:0\mbox{]} C\+M\+S\+IS H\+AL sub version ~\newline
+ 
+
+Definition at line 75 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a63ea62503c88acab19fcf3d5743009e3}\label{core__cm3_8h_a63ea62503c88acab19fcf3d5743009e3}} 
+\index{core\_cm3.h@{core\_cm3.h}!\_\_CORTEX\_M@{\_\_CORTEX\_M}}
+\index{\_\_CORTEX\_M@{\_\_CORTEX\_M}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{\_\_CORTEX\_M}{\_\_CORTEX\_M}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+M~(0x03)}
+
+Cortex core ~\newline
+ 
+
+Definition at line 78 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_af63697ed9952cc71e1225efe205f6cd3}\label{core__cm3_8h_af63697ed9952cc71e1225efe205f6cd3}} 
+\index{core\_cm3.h@{core\_cm3.h}!\_\_I@{\_\_I}}
+\index{\_\_I@{\_\_I}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{\_\_I}{\_\_I}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+I~volatile const}
+
+IO definitions
+
+define access restrictions to peripheral registers defines \textquotesingle{}read only\textquotesingle{} permissions ~\newline
+ 
+
+Definition at line 101 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_aec43007d9998a0a0e01faede4133d6be}\label{core__cm3_8h_aec43007d9998a0a0e01faede4133d6be}} 
+\index{core\_cm3.h@{core\_cm3.h}!\_\_IO@{\_\_IO}}
+\index{\_\_IO@{\_\_IO}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{\_\_IO}{\_\_IO}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+IO~volatile}
+
+defines \textquotesingle{}read / write\textquotesingle{} permissions ~\newline
+ 
+
+Definition at line 103 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_ae3fe3587d5100c787e02102ce3944460}\label{core__cm3_8h_ae3fe3587d5100c787e02102ce3944460}} 
+\index{core\_cm3.h@{core\_cm3.h}!\_\_NVIC\_PRIO\_BITS@{\_\_NVIC\_PRIO\_BITS}}
+\index{\_\_NVIC\_PRIO\_BITS@{\_\_NVIC\_PRIO\_BITS}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{\_\_NVIC\_PRIO\_BITS}{\_\_NVIC\_PRIO\_BITS}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+N\+V\+I\+C\+\_\+\+P\+R\+I\+O\+\_\+\+B\+I\+TS~4}
+
+standard definition for N\+V\+IC Priority Bits 
+
+Definition at line 89 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a7e25d9380f9ef903923964322e71f2f6}\label{core__cm3_8h_a7e25d9380f9ef903923964322e71f2f6}} 
+\index{core\_cm3.h@{core\_cm3.h}!\_\_O@{\_\_O}}
+\index{\_\_O@{\_\_O}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{\_\_O}{\_\_O}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+O~volatile}
+
+defines \textquotesingle{}write only\textquotesingle{} permissions ~\newline
+ 
+
+Definition at line 102 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_ab6e30a2b802d9021619dbb0be7f5d63d}\label{core__cm3_8h_ab6e30a2b802d9021619dbb0be7f5d63d}} 
+\index{core\_cm3.h@{core\_cm3.h}!CoreDebug@{CoreDebug}}
+\index{CoreDebug@{CoreDebug}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{CoreDebug}{CoreDebug}}
+{\footnotesize\ttfamily \#define Core\+Debug~((\mbox{\hyperlink{struct_core_debug___type}{Core\+Debug\+\_\+\+Type}} $\ast$)     \mbox{\hyperlink{core__cm3_8h_a680604dbcda9e9b31a1639fcffe5230b}{Core\+Debug\+\_\+\+B\+A\+SE}})}
+
+Core Debug configuration struct ~\newline
+ 
+
+Definition at line 272 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a680604dbcda9e9b31a1639fcffe5230b}\label{core__cm3_8h_a680604dbcda9e9b31a1639fcffe5230b}} 
+\index{core\_cm3.h@{core\_cm3.h}!CoreDebug\_BASE@{CoreDebug\_BASE}}
+\index{CoreDebug\_BASE@{CoreDebug\_BASE}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{CoreDebug\_BASE}{CoreDebug\_BASE}}
+{\footnotesize\ttfamily \#define Core\+Debug\+\_\+\+B\+A\+SE~(0x\+E000\+E\+D\+F0)}
+
+Core Debug Base Address ~\newline
+ 
+
+Definition at line 262 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a806e775f7ac4bf19dd39b4075bd5a8a5}\label{core__cm3_8h_a806e775f7ac4bf19dd39b4075bd5a8a5}} 
+\index{core\_cm3.h@{core\_cm3.h}!CoreDebug\_DEMCR\_TRCENA@{CoreDebug\_DEMCR\_TRCENA}}
+\index{CoreDebug\_DEMCR\_TRCENA@{CoreDebug\_DEMCR\_TRCENA}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{CoreDebug\_DEMCR\_TRCENA}{CoreDebug\_DEMCR\_TRCENA}}
+{\footnotesize\ttfamily \#define Core\+Debug\+\_\+\+D\+E\+M\+C\+R\+\_\+\+T\+R\+C\+E\+NA~(1 $<$$<$ 24)}
+
+D\+E\+M\+CR T\+R\+C\+E\+NA enable ~\newline
+ 
+
+Definition at line 119 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a164238adbad56f07c7dd4e912af748dd}\label{core__cm3_8h_a164238adbad56f07c7dd4e912af748dd}} 
+\index{core\_cm3.h@{core\_cm3.h}!InterruptType@{InterruptType}}
+\index{InterruptType@{InterruptType}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{InterruptType}{InterruptType}}
+{\footnotesize\ttfamily \#define Interrupt\+Type~((\mbox{\hyperlink{struct_interrupt_type___type}{Interrupt\+Type\+\_\+\+Type}} $\ast$) \mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}})}
+
+Interrupt Type Register ~\newline
+ 
+
+Definition at line 267 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_abae7cdf882def602cb787bb039ff6a43}\label{core__cm3_8h_abae7cdf882def602cb787bb039ff6a43}} 
+\index{core\_cm3.h@{core\_cm3.h}!ITM@{ITM}}
+\index{ITM@{ITM}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{ITM}{ITM}}
+{\footnotesize\ttfamily \#define I\+TM~((\mbox{\hyperlink{struct_i_t_m___type}{I\+T\+M\+\_\+\+Type}} $\ast$)           \mbox{\hyperlink{core__cm3_8h_add76251e412a195ec0a8f47227a8359e}{I\+T\+M\+\_\+\+B\+A\+SE}})}
+
+I\+TM configuration struct ~\newline
+ 
+
+Definition at line 271 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_add76251e412a195ec0a8f47227a8359e}\label{core__cm3_8h_add76251e412a195ec0a8f47227a8359e}} 
+\index{core\_cm3.h@{core\_cm3.h}!ITM\_BASE@{ITM\_BASE}}
+\index{ITM\_BASE@{ITM\_BASE}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{ITM\_BASE}{ITM\_BASE}}
+{\footnotesize\ttfamily \#define I\+T\+M\+\_\+\+B\+A\+SE~(0x\+E0000000)}
+
+I\+TM Base Address ~\newline
+ 
+
+Definition at line 261 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a3669715b5b18b1144dd0f69eb220e743}\label{core__cm3_8h_a3669715b5b18b1144dd0f69eb220e743}} 
+\index{core\_cm3.h@{core\_cm3.h}!ITM\_TCR\_ITMENA@{ITM\_TCR\_ITMENA}}
+\index{ITM\_TCR\_ITMENA@{ITM\_TCR\_ITMENA}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{ITM\_TCR\_ITMENA}{ITM\_TCR\_ITMENA}}
+{\footnotesize\ttfamily \#define I\+T\+M\+\_\+\+T\+C\+R\+\_\+\+I\+T\+M\+E\+NA~1}
+
+I\+TM enable ~\newline
+ 
+
+Definition at line 120 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_ac8e97e8ce56ae9f57da1363a937f8a17}\label{core__cm3_8h_ac8e97e8ce56ae9f57da1363a937f8a17}} 
+\index{core\_cm3.h@{core\_cm3.h}!NVIC@{NVIC}}
+\index{NVIC@{NVIC}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{NVIC}{NVIC}}
+{\footnotesize\ttfamily \#define N\+V\+IC~((\mbox{\hyperlink{struct_n_v_i_c___type}{N\+V\+I\+C\+\_\+\+Type}} $\ast$)          \mbox{\hyperlink{core__cm3_8h_aa0288691785a5f868238e0468b39523d}{N\+V\+I\+C\+\_\+\+B\+A\+SE}})}
+
+N\+V\+IC configuration struct ~\newline
+ 
+
+Definition at line 270 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a2b09738a6dbbef976ba64156c3b5c5a3}\label{core__cm3_8h_a2b09738a6dbbef976ba64156c3b5c5a3}} 
+\index{core\_cm3.h@{core\_cm3.h}!NVIC\_AIRCR\_ENDIANESS@{NVIC\_AIRCR\_ENDIANESS}}
+\index{NVIC\_AIRCR\_ENDIANESS@{NVIC\_AIRCR\_ENDIANESS}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_AIRCR\_ENDIANESS}{NVIC\_AIRCR\_ENDIANESS}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+A\+I\+R\+C\+R\+\_\+\+E\+N\+D\+I\+A\+N\+E\+SS~15}
+
+Endianess ~\newline
+ 
+
+Definition at line 116 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a2f8cb12ddfff6c13cf3fefd1c7d490f4}\label{core__cm3_8h_a2f8cb12ddfff6c13cf3fefd1c7d490f4}} 
+\index{core\_cm3.h@{core\_cm3.h}!NVIC\_AIRCR\_VECTKEY@{NVIC\_AIRCR\_VECTKEY}}
+\index{NVIC\_AIRCR\_VECTKEY@{NVIC\_AIRCR\_VECTKEY}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_AIRCR\_VECTKEY}{NVIC\_AIRCR\_VECTKEY}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+A\+I\+R\+C\+R\+\_\+\+V\+E\+C\+T\+K\+EY~(0x5\+FA $<$$<$ 16)}
+
+A\+I\+R\+CR Key for write access ~\newline
+ 
+
+Definition at line 115 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_aa0288691785a5f868238e0468b39523d}\label{core__cm3_8h_aa0288691785a5f868238e0468b39523d}} 
+\index{core\_cm3.h@{core\_cm3.h}!NVIC\_BASE@{NVIC\_BASE}}
+\index{NVIC\_BASE@{NVIC\_BASE}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_BASE}{NVIC\_BASE}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+B\+A\+SE~(\mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}} +  0x0100)}
+
+N\+V\+IC Base Address ~\newline
+ 
+
+Definition at line 264 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a461d3b604dbeec9525775a7ad7ee501c}\label{core__cm3_8h_a461d3b604dbeec9525775a7ad7ee501c}} 
+\index{core\_cm3.h@{core\_cm3.h}!NVIC\_SYSRESETREQ@{NVIC\_SYSRESETREQ}}
+\index{NVIC\_SYSRESETREQ@{NVIC\_SYSRESETREQ}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_SYSRESETREQ}{NVIC\_SYSRESETREQ}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+S\+Y\+S\+R\+E\+S\+E\+T\+R\+EQ~2}
+
+System Reset Request ~\newline
+ 
+
+Definition at line 114 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a5baecd2b24d7ca2fb850c7ffc05799ac}\label{core__cm3_8h_a5baecd2b24d7ca2fb850c7ffc05799ac}} 
+\index{core\_cm3.h@{core\_cm3.h}!NVIC\_VECTRESET@{NVIC\_VECTRESET}}
+\index{NVIC\_VECTRESET@{NVIC\_VECTRESET}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_VECTRESET}{NVIC\_VECTRESET}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+V\+E\+C\+T\+R\+E\+S\+ET~0}
+
+Vector Reset Bit ~\newline
+ 
+
+Definition at line 113 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_aaaf6477c2bde2f00f99e3c2fd1060b01}\label{core__cm3_8h_aaaf6477c2bde2f00f99e3c2fd1060b01}} 
+\index{core\_cm3.h@{core\_cm3.h}!SCB@{SCB}}
+\index{SCB@{SCB}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{SCB}{SCB}}
+{\footnotesize\ttfamily \#define S\+CB~((\mbox{\hyperlink{struct_s_c_b___type}{S\+C\+B\+\_\+\+Type}} $\ast$)           \mbox{\hyperlink{core__cm3_8h_ad55a7ddb8d4b2398b0c1cfec76c0d9fd}{S\+C\+B\+\_\+\+B\+A\+SE}})}
+
+S\+CB configuration struct ~\newline
+ 
+
+Definition at line 268 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_ad55a7ddb8d4b2398b0c1cfec76c0d9fd}\label{core__cm3_8h_ad55a7ddb8d4b2398b0c1cfec76c0d9fd}} 
+\index{core\_cm3.h@{core\_cm3.h}!SCB\_BASE@{SCB\_BASE}}
+\index{SCB\_BASE@{SCB\_BASE}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{SCB\_BASE}{SCB\_BASE}}
+{\footnotesize\ttfamily \#define S\+C\+B\+\_\+\+B\+A\+SE~(\mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}} +  0x0\+D00)}
+
+System Control Block Base Address ~\newline
+ 
+
+Definition at line 265 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}\label{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}} 
+\index{core\_cm3.h@{core\_cm3.h}!SCS\_BASE@{SCS\_BASE}}
+\index{SCS\_BASE@{SCS\_BASE}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{SCS\_BASE}{SCS\_BASE}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+B\+A\+SE~(0x\+E000\+E000)}
+
+System Control Space Base Address ~\newline
+ 
+
+Definition at line 260 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_acd96c53beeaff8f603fcda425eb295de}\label{core__cm3_8h_acd96c53beeaff8f603fcda425eb295de}} 
+\index{core\_cm3.h@{core\_cm3.h}!SysTick@{SysTick}}
+\index{SysTick@{SysTick}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{SysTick}{SysTick}}
+{\footnotesize\ttfamily \#define Sys\+Tick~((\mbox{\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}} $\ast$)       \mbox{\hyperlink{core__cm3_8h_a58effaac0b93006b756d33209e814646}{Sys\+Tick\+\_\+\+B\+A\+SE}})}
+
+Sys\+Tick configuration struct ~\newline
+ 
+
+Definition at line 269 of file core\+\_\+cm3.\+h.
+
+\mbox{\Hypertarget{core__cm3_8h_a58effaac0b93006b756d33209e814646}\label{core__cm3_8h_a58effaac0b93006b756d33209e814646}} 
+\index{core\_cm3.h@{core\_cm3.h}!SysTick\_BASE@{SysTick\_BASE}}
+\index{SysTick\_BASE@{SysTick\_BASE}!core\_cm3.h@{core\_cm3.h}}
+\doxysubsubsection{\texorpdfstring{SysTick\_BASE}{SysTick\_BASE}}
+{\footnotesize\ttfamily \#define Sys\+Tick\+\_\+\+B\+A\+SE~(\mbox{\hyperlink{core__cm3_8h_a3c14ed93192c8d9143322bbf77ebf770}{S\+C\+S\+\_\+\+B\+A\+SE}} +  0x0010)}
+
+Sys\+Tick Base Address ~\newline
+ 
+
+Definition at line 263 of file core\+\_\+cm3.\+h.
+

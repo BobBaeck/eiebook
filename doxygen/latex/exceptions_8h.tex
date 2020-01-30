@@ -1,0 +1,150 @@
+\hypertarget{exceptions_8h}{}\doxysection{D\+:/\+Git\+Hub/eiefirmware/eiebook/eiebook/firmware\+\_\+common/drivers/exceptions.h File Reference}
+\label{exceptions_8h}\index{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/drivers/exceptions.h@{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/drivers/exceptions.h}}
+
+
+Atmel-\/supplied header file for \mbox{\hyperlink{exceptions_8c}{exceptions.\+c}}.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}\label{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}} 
+\#define \mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}}~\+\_\+\+\_\+weak
+\begin{DoxyCompactList}\small\item\em Weak attribute. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{exceptions_8h_abd87cb9c47c320ff3efcb99a0e22d27f}\label{exceptions_8h_abd87cb9c47c320ff3efcb99a0e22d27f}} 
+typedef void($\ast$ {\bfseries Int\+Func}) (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{exceptions_8h_ae5eb40c717803d8eae9630d1f7237fd7}\label{exceptions_8h_ae5eb40c717803d8eae9630d1f7237fd7}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries N\+M\+I\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_abf5d8b089d5aceaf6a281f9bb81ac731}\label{exceptions_8h_abf5d8b089d5aceaf6a281f9bb81ac731}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries Hard\+Fault\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a4c321f9a17eb0936f512e064affbbaed}\label{exceptions_8h_a4c321f9a17eb0936f512e064affbbaed}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries Mem\+Manage\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_ae216256baeae935e04745241645d44c0}\label{exceptions_8h_ae216256baeae935e04745241645d44c0}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries Bus\+Fault\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a5fad9d61e19fbc1f3d3e53fbe0082c83}\label{exceptions_8h_a5fad9d61e19fbc1f3d3e53fbe0082c83}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries Usage\+Fault\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a553d3c6fbc0ff764fa70b866b5c79e3e}\label{exceptions_8h_a553d3c6fbc0ff764fa70b866b5c79e3e}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries S\+V\+C\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_af332e2a018a0e7c3c0b8730bc638588a}\label{exceptions_8h_af332e2a018a0e7c3c0b8730bc638588a}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries Debug\+Mon\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a24fd4a50e601121b29d900129e4602db}\label{exceptions_8h_a24fd4a50e601121b29d900129e4602db}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries Pend\+S\+V\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_ab80f32111a0725c9f4cdfb9d6c9b7f82}\label{exceptions_8h_ab80f32111a0725c9f4cdfb9d6c9b7f82}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries Sys\+Tick\+\_\+\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a1d7cc51d921a2d71c36f2937c265f64b}\label{exceptions_8h_a1d7cc51d921a2d71c36f2937c265f64b}} 
+void {\bfseries Irq\+Handler\+Not\+Used} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_ad0b5bf4097662c99b3877c99e5304608}\label{exceptions_8h_ad0b5bf4097662c99b3877c99e5304608}} 
+void {\bfseries S\+Y\+S\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a300dae7c61bf868a35ac95d9e5b3370e}\label{exceptions_8h_a300dae7c61bf868a35ac95d9e5b3370e}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries S\+U\+P\+C\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a8b7be8326984739cc746676accdb7325}\label{exceptions_8h_a8b7be8326984739cc746676accdb7325}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries R\+S\+T\+C\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a577d0350499d60a866e8c01dad221c59}\label{exceptions_8h_a577d0350499d60a866e8c01dad221c59}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries R\+T\+C\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_ac406ee88637b86c5de863c0eec5ca225}\label{exceptions_8h_ac406ee88637b86c5de863c0eec5ca225}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries R\+T\+T\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a56398fa9884607c93ba93867e1292ba8}\label{exceptions_8h_a56398fa9884607c93ba93867e1292ba8}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries W\+D\+T\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a6029330ec518a5dd4277d19cc6ccd363}\label{exceptions_8h_a6029330ec518a5dd4277d19cc6ccd363}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries P\+M\+C\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a3eb949e10c2079fa61b2a8832817ea9d}\label{exceptions_8h_a3eb949e10c2079fa61b2a8832817ea9d}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries E\+F\+C0\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a276558e55db8fb48bc61dd2258b9bc71}\label{exceptions_8h_a276558e55db8fb48bc61dd2258b9bc71}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries E\+F\+C1\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a4c1b920e59760cebe96b7cda175642bc}\label{exceptions_8h_a4c1b920e59760cebe96b7cda175642bc}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries D\+B\+G\+U\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a357e85ccf3d98064d7349595399efd33}\label{exceptions_8h_a357e85ccf3d98064d7349595399efd33}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries H\+S\+M\+C4\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a934205d5ea7d35c6b67f56d1423d633b}\label{exceptions_8h_a934205d5ea7d35c6b67f56d1423d633b}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries P\+I\+O\+A\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_ad6a575cdd2f09540459f8d49aabcddf2}\label{exceptions_8h_ad6a575cdd2f09540459f8d49aabcddf2}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries P\+I\+O\+B\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a29ff4aab01bc1b56658d1f5c931f6025}\label{exceptions_8h_a29ff4aab01bc1b56658d1f5c931f6025}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries P\+I\+O\+C\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_aa5827643bf07f460088723ac69469663}\label{exceptions_8h_aa5827643bf07f460088723ac69469663}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries U\+S\+A\+R\+T0\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a5410cd22a48779a83f1374501b3013d9}\label{exceptions_8h_a5410cd22a48779a83f1374501b3013d9}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries U\+S\+A\+R\+T1\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a405d62cd277c50fa3b8b4b2dae3c44fe}\label{exceptions_8h_a405d62cd277c50fa3b8b4b2dae3c44fe}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries U\+S\+A\+R\+T2\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a29b2712afac6ee491aba65a8c167693d}\label{exceptions_8h_a29b2712afac6ee491aba65a8c167693d}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries U\+S\+A\+R\+T3\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_af8036ddbd0f6f8d2e1e7f760c94ceb63}\label{exceptions_8h_af8036ddbd0f6f8d2e1e7f760c94ceb63}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries M\+C\+I0\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a346845945f3324973c755fa8b4a565cd}\label{exceptions_8h_a346845945f3324973c755fa8b4a565cd}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries T\+W\+I0\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a9ceb179801b7212f708df359b0c128a5}\label{exceptions_8h_a9ceb179801b7212f708df359b0c128a5}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries T\+W\+I1\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a95dad7f645f691dcc6105bfd9aa608c2}\label{exceptions_8h_a95dad7f645f691dcc6105bfd9aa608c2}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries S\+P\+I0\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_ac71f6f75b10752c80bdae0aa4f602509}\label{exceptions_8h_ac71f6f75b10752c80bdae0aa4f602509}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries S\+S\+C0\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_af05cb79db808cf5b99daaef27ca58999}\label{exceptions_8h_af05cb79db808cf5b99daaef27ca58999}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries T\+C0\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a925cd95ccd1a521fbd693192a2b54628}\label{exceptions_8h_a925cd95ccd1a521fbd693192a2b54628}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries T\+C1\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a946e3a3f5961bbda59aa9c18d48f49c8}\label{exceptions_8h_a946e3a3f5961bbda59aa9c18d48f49c8}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries T\+C2\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a0446b8c67be493c821aa8b27d9b95159}\label{exceptions_8h_a0446b8c67be493c821aa8b27d9b95159}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries P\+W\+M\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a889eb5ad08179885f0ff66dc58f66604}\label{exceptions_8h_a889eb5ad08179885f0ff66dc58f66604}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries A\+D\+C\+C0\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a960a87fe7462d4b426652e151159f89c}\label{exceptions_8h_a960a87fe7462d4b426652e151159f89c}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries A\+D\+C\+C1\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_a5ea286655e583d34d3d9916ca0fc654b}\label{exceptions_8h_a5ea286655e583d34d3d9916ca0fc654b}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries H\+D\+M\+A\+\_\+\+Irq\+Handler} (void)
+\item 
+\mbox{\Hypertarget{exceptions_8h_ad3e03739499711c8643e60d22bde2bf0}\label{exceptions_8h_ad3e03739499711c8643e60d22bde2bf0}} 
+\mbox{\hyperlink{exceptions_8h_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void {\bfseries U\+D\+P\+D\+\_\+\+Irq\+Handler} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Atmel-\/supplied header file for \mbox{\hyperlink{exceptions_8c}{exceptions.\+c}}. 
+

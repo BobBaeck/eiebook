@@ -1,0 +1,90 @@
+\hypertarget{user__app1_8h}{}\doxysection{D\+:/\+Git\+Hub/eiefirmware/eiebook/eiebook/firmware\+\_\+common/application/user\+\_\+app1.h File Reference}
+\label{user__app1_8h}\index{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/application/user\_app1.h@{D:/GitHub/eiefirmware/eiebook/eiebook/firmware\_common/application/user\_app1.h}}
+
+
+Header file for user\+\_\+app1.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{user__app1_8h_abbe2c1447f0d62d7c9054b6331f4f0ea}{User\+App1\+Initialize}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the State Machine and its variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{user__app1_8h_a8f2ac55b4fdfdf3841ce019c51b72f5e}{User\+App1\+Run\+Active\+State}} (void)
+\begin{DoxyCompactList}\small\item\em Selects and runs one iteration of the current state in the state machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for user\+\_\+app1. 
+
+\DoxyHorRuler{0}
+
+
+~\newline
+ \DoxyHorRuler{0}
+ To start a new task using this user\+\_\+app1 as a template\+:
+\begin{DoxyEnumerate}
+\item Follow the instructions at the top of \mbox{\hyperlink{user__app1_8c}{user\+\_\+app1.\+c}}
+\item Use ctrl-\/h to find and replace all instances of \char`\"{}user\+\_\+app1\char`\"{} with \char`\"{}yournewtaskname\char`\"{}
+\item Use ctrl-\/h to find and replace all instances of \char`\"{}\+User\+App1\char`\"{} with \char`\"{}\+Your\+New\+Task\+Name\char`\"{}
+\item Use ctrl-\/h to find and replace all instances of \char`\"{}\+U\+S\+E\+R\+\_\+\+A\+P\+P1\char`\"{} with \char`\"{}\+Y\+O\+U\+R\+\_\+\+N\+E\+W\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\char`\"{}
+\item Add \#include yournewtaskname.\+h" to \mbox{\hyperlink{configuration_8h}{configuration.\+h}}
+\item Add/update any special configurations required in \mbox{\hyperlink{configuration_8h}{configuration.\+h}} (e.\+g. peripheral assignment and setup values) 
+\end{DoxyEnumerate}\hypertarget{user__app1_8h_autotoc_md3}{}\doxysubsubsection{7. Delete this text (between the dashed lines)}\label{user__app1_8h_autotoc_md3}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{user__app1_8h_abbe2c1447f0d62d7c9054b6331f4f0ea}\label{user__app1_8h_abbe2c1447f0d62d7c9054b6331f4f0ea}} 
+\index{user\_app1.h@{user\_app1.h}!UserApp1Initialize@{UserApp1Initialize}}
+\index{UserApp1Initialize@{UserApp1Initialize}!user\_app1.h@{user\_app1.h}}
+\doxysubsubsection{\texorpdfstring{UserApp1Initialize()}{UserApp1Initialize()}}
+{\footnotesize\ttfamily void User\+App1\+Initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes the State Machine and its variables. 
+
+\DoxyHorRuler{0}
+
+
+Should only be called once in main init section.
+
+Requires\+:
+\begin{DoxyItemize}
+\item N\+O\+NE
+\end{DoxyItemize}
+
+Promises\+:
+\begin{DoxyItemize}
+\item N\+O\+NE 
+\end{DoxyItemize}
+
+Definition at line 76 of file user\+\_\+app1.\+c.
+
+\mbox{\Hypertarget{user__app1_8h_a8f2ac55b4fdfdf3841ce019c51b72f5e}\label{user__app1_8h_a8f2ac55b4fdfdf3841ce019c51b72f5e}} 
+\index{user\_app1.h@{user\_app1.h}!UserApp1RunActiveState@{UserApp1RunActiveState}}
+\index{UserApp1RunActiveState@{UserApp1RunActiveState}!user\_app1.h@{user\_app1.h}}
+\doxysubsubsection{\texorpdfstring{UserApp1RunActiveState()}{UserApp1RunActiveState()}}
+{\footnotesize\ttfamily void User\+App1\+Run\+Active\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Selects and runs one iteration of the current state in the state machine. 
+
+\DoxyHorRuler{0}
+
+
+All state machines have a T\+O\+T\+AL of 1ms to execute, so on average n state machines may take 1ms / n to execute.
+
+Requires\+:
+\begin{DoxyItemize}
+\item State machine function pointer points at current state
+\end{DoxyItemize}
+
+Promises\+:
+\begin{DoxyItemize}
+\item Calls the function to pointed by the state machine function pointer 
+\end{DoxyItemize}
+
+Definition at line 107 of file user\+\_\+app1.\+c.
+
